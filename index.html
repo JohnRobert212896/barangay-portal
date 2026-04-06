@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barangay Kwatro Public Information Portal</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">
+        <i class="fa-solid fa-building-user me-2"></i>Barangay Kwatro Portal
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto text-center">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#notify">Notify</a></li>
+          <li class="nav-item"><a class="nav-link" href="#schedule">Schedule</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section d-flex align-items-center">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6" data-aos="fade-right">
+          <h1 class="hero-title">Barangay Kwatro Public Information Portal</h1>
+          <p class="hero-subtitle">
+            A responsive public portal for announcements, complaints, schedules, and NSTP-CWTS community activities.
+          </p>
+          <div class="hero-buttons mt-4">
+            <a href="#notify" class="btn btn-warning btn-lg me-2">Notify Barangay</a>
+            <a href="#schedule" class="btn btn-outline-light btn-lg">View Events</a>
+          </div>
+        </div>
+        <div class="col-lg-6 text-center" data-aos="zoom-in">
+          <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1200&auto=format&fit=crop" 
+               alt="Barangay Community" class="img-fluid hero-img rounded-4 shadow-lg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Info -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row text-center g-4">
+        <div class="col-md-4" data-aos="fade-up">
+          <div class="info-card p-4 h-100">
+            <i class="fa-solid fa-bullhorn info-icon"></i>
+            <h4 class="mt-3">Public Notice</h4>
+            <p>Receive barangay updates, reminders, and public information in one place.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+          <div class="info-card p-4 h-100">
+            <i class="fa-solid fa-calendar-days info-icon"></i>
+            <h4 class="mt-3">Weekly Schedule</h4>
+            <p>Know the latest clean-up drives, road clearing, and barangay events ahead of time.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="info-card p-4 h-100">
+            <i class="fa-solid fa-camera-retro info-icon"></i>
+            <h4 class="mt-3">Activity Gallery</h4>
+            <p>Showcase NSTP-CWTS trainee community service and barangay activities.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Notify / Contact Section -->
+  <section id="notify" class="py-5">
+    <div class="container">
+      <div class="section-title text-center mb-5" data-aos="fade-up">
+        <h2>Notify or Contact the Barangay</h2>
+        <p>Submit your concern for peace, order, safety, and community welfare.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-5" data-aos="fade-right">
+          <div class="contact-box p-4 shadow-sm rounded-4 h-100">
+            <h4 class="mb-4">Common Community Concerns</h4>
+
+            <div class="complaint-item mb-3">
+              <i class="fa-solid fa-user-secret me-2 text-warning"></i>
+              <strong>Curfew / Peace & Order</strong>
+              <p class="mb-0">For disturbances, loitering, or curfew-related incidents.</p>
+            </div>
+
+            <div class="complaint-item mb-3">
+              <i class="fa-solid fa-headphones me-2 text-warning"></i>
+              <strong>Noise Complaint</strong>
+              <p class="mb-0">For loud gaming, videoke, or noise late at night.</p>
+            </div>
+
+            <div class="complaint-item mb-3">
+              <i class="fa-solid fa-person-cane me-2 text-warning"></i>
+              <strong>Elder Safety</strong>
+              <p class="mb-0">Protect senior citizens who need peace and safety at night.</p>
+            </div>
+
+            <div class="complaint-item">
+              <i class="fa-solid fa-children me-2 text-warning"></i>
+              <strong>Children Welfare</strong>
+              <p class="mb-0">For child safety, welfare, and neighborhood concerns.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7" data-aos="fade-left">
+          <div class="form-box p-4 shadow-sm rounded-4">
+            <form id="complaintForm">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label">Full Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Contact Number</label>
+                  <input type="tel" class="form-control" id="contact" placeholder="09XXXXXXXXX" required>
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label">Concern Type</label>
+                  <select class="form-select" id="concern" required>
+                    <option value="">Select concern</option>
+                    <option>Curfew / Peace & Order</option>
+                    <option>Noise Complaint</option>
+                    <option>Elder Safety</option>
+                    <option>Children Welfare</option>
+                    <option>Road Obstruction</option>
+                    <option>Other Barangay Concern</option>
+                  </select>
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label">Location</label>
+                  <input type="text" class="form-control" id="location" placeholder="Sitio / Purok / Street" required>
+                </div>
+
+                <div class="col-12">
+                  <label class="form-label">Message / Complaint Details</label>
+                  <textarea class="form-control" id="message" rows="5" placeholder="Write your concern here..." required></textarea>
+                </div>
+
+                <div class="col-12 d-grid">
+                  <button type="submit" class="btn btn-warning btn-lg">
+                    <i class="fa-solid fa-paper-plane me-2"></i>Submit Concern
+                  </button>
+                </div>
+              </div>
+            </form>
+
+            <div id="formAlert" class="alert alert-success mt-4 d-none" role="alert">
+              Your concern has been submitted successfully!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Schedule / Event Section -->
+  <section id="schedule" class="py-5 bg-light">
+    <div class="container">
+      <div class="section-title text-center mb-5" data-aos="fade-up">
+        <h2>Barangay Schedule & Events</h2>
+        <p>Advance notice for weekly barangay activities and community clean-up drives.</p>
+      </div>
+
+      <div class="row g-4" id="eventContainer">
+        <div class="col-md-6 col-lg-4" data-aos="zoom-in">
+          <div class="event-card p-4 shadow-sm rounded-4 h-100">
+            <div class="event-date">Every Saturday</div>
+            <h4>Barangay KALINISAN Drive</h4>
+            <p>Weekly clean-up activity for streets, canals, and public areas.</p>
+            <span class="badge bg-success">Community Service</span>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="150">
+          <div class="event-card p-4 shadow-sm rounded-4 h-100">
+            <div class="event-date">Every Sunday</div>
+            <h4>Road Clearing Operation</h4>
+            <p>Barangay road clearing to maintain order and clean surroundings.</p>
+            <span class="badge bg-primary">Public Order</span>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="event-card p-4 shadow-sm rounded-4 h-100">
+            <div class="event-date">Monthly</div>
+            <h4>NSTP-CWTS Community Activity</h4>
+            <p>Barangay participation and volunteer activities of CWTS trainees.</p>
+            <span class="badge bg-warning text-dark">CWTS Program</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add Event Form -->
+      <div class="row justify-content-center mt-5">
+        <div class="col-lg-8" data-aos="fade-up">
+          <div class="form-box p-4 shadow-sm rounded-4">
+            <h4 class="mb-4 text-center">Add Barangay Event</h4>
+            <form id="eventForm">
+              <div class="row g-3">
+                <div class="col-md-4">
+                  <input type="text" id="eventDate" class="form-control" placeholder="Event Date" required>
+                </div>
+                <div class="col-md-4">
+                  <input type="text" id="eventTitle" class="form-control" placeholder="Event Title" required>
+                </div>
+                <div class="col-md-4">
+                  <input type="text" id="eventTag" class="form-control" placeholder="Tag (e.g. Clean-up)" required>
+                </div>
+                <div class="col-12">
+                  <textarea id="eventDesc" class="form-control" rows="3" placeholder="Event Description" required></textarea>
+                </div>
+                <div class="col-12 d-grid">
+                  <button type="submit" class="btn btn-dark btn-lg">
+                    <i class="fa-solid fa-plus me-2"></i>Add Event
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-5">
+    <div class="container">
+      <div class="section-title text-center mb-5" data-aos="fade-up">
+        <h2>Barangay Activity Gallery</h2>
+        <p>Photo highlights of NSTP-CWTS trainees and barangay community service.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-4" data-aos="fade-up">
+          <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop" alt="CWTS Activity">
+            <div class="gallery-overlay">
+              <h5>Community Clean-Up</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="150">
+          <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=1200&auto=format&fit=crop" alt="Barangay Volunteer">
+            <div class="gallery-overlay">
+              <h5>Volunteer Program</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200&auto=format&fit=crop" alt="CWTS Trainees">
+            <div class="gallery-overlay">
+              <h5>NSTP-CWTS Trainees</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4" data-aos="fade-up">
+          <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=1200&auto=format&fit=crop" alt="Barangay Activity">
+            <div class="gallery-overlay">
+              <h5>Barangay Clean Surroundings</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="150">
+          <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?q=80&w=1200&auto=format&fit=crop" alt="Public Service">
+            <div class="gallery-overlay">
+              <h5>Public Service Activity</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop" alt="Community Work">
+            <div class="gallery-overlay">
+              <h5>Community Development</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-5 bg-dark text-white">
+    <div class="container text-center" data-aos="fade-up">
+      <h2 class="mb-3">About Barangay Kwatro Portal</h2>
+      <p class="about-text mx-auto">
+        This public information portal is designed to help residents communicate with the barangay, stay updated with events, and promote NSTP-CWTS civic engagement activities.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center py-4">
+    <div class="container">
+      <p class="mb-0">© 2026 Barangay Kwatro Public Information Portal | Developed by JRJDev</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
